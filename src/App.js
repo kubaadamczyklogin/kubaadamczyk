@@ -60,8 +60,7 @@ export default function App() {
                 Obecnie pracuje w spółce Oponeo.PL S.A. Zajmuje się pracami
                 frontendowymi w zespole rozwijającym największy polski
                 internetowy sklep rowerowy CentrumRowerowe.pl. Sklep zbudowany
-                jest w oparciu o klasyczne MVC: c-sharp i frontend oparty o
-                jQuery i Less.
+                jest na klasycznym wzorcu MVC, frontend oparty o jQuery i Less.
               </Typography>
               <Typography component="p">
                 Czasem biorę udział w powiązanych projektach np:{" "}
@@ -95,7 +94,7 @@ export default function App() {
               Prosty audio player, pobierający utwory muzyczne z zewnętrznego
               api. Wykonałem podczas kursu{" "}
               <Link href="https://kursreacta.pl/">
-                "kurs reacta - szybki start"
+                "Kurs Reacta - Szybki start"
               </Link>
               .
             </Typography>
@@ -137,8 +136,7 @@ export default function App() {
               spóźnienie pociągu lub gdy zamierzam coś załatwić w drodze
               powrotnej. Dane o rozkładzie jazdy oraz czasy dojazdu rowerem na
               stacje - przechowuje na serwerze Apollo GraphQl, który sam
-              napisałem. (niestety obecnie dane nie są aktualne - zmienił się
-              rozkład jazdy, a ja niezdążyłem zaktualizować)
+              napisałem.
             </Typography>
             <Button variant="outlined" href="https://trains.vercel.app/">
               Sprawdź
@@ -154,7 +152,7 @@ export default function App() {
               nieaktywnej karcie przeglądarki). Stylowanie z użyciem biblioteki
               Material Ui. Inspirowany timerem pomodoro z kursu{" "}
               <Link href="https://kursreacta.pl/">kursreacta.pl</Link>, jednak
-              wprowadziłem w nim dużo modyfikacji.
+              wprowadziłem w nim dużo własnych modyfikacji.
             </Typography>
             <Button
               variant="outlined"
