@@ -11,12 +11,19 @@ import {
   ListItemText,
   ListItemIcon,
   Divider,
-  Button
+  Button,
+  AppBar,
+  Toolbar,
+  Chip
 } from "@mui/material";
 import { Phone, Mail, LinkedIn } from "@mui/icons-material";
 import { styled } from "@mui/material/styles";
 
 const CustomSection = styled(Box)`
+  &:first-of-type {
+    padding-top: 80px;
+  }
+
   padding: 15px 0;
 
   .MuiPaper-root {
@@ -42,18 +49,39 @@ const CustomSection = styled(Box)`
   .MuiButton-root {
     margin-top: 5px;
   }
+
+  &.skills {
+    h2 {
+      margin-bottom: 15px;
+    }
+
+    .MuiChip-root {
+      margin: 5px;
+      padding: 20px 5px;
+      font-size: 17px;
+    }
+  }
 `;
 
 export default function App() {
   return (
     <div style={{ background: "#5b7c99" }}>
       <CssBaseline />
+      <Box sx={{ flexGrow: 1 }}>
+        <AppBar position="fixed">
+          <Toolbar>
+            <Typography
+              align="center"
+              variant="h5"
+              component="div"
+              sx={{ flexGrow: 1 }}
+            >
+              Kuba Adamczyk
+            </Typography>
+          </Toolbar>
+        </AppBar>
+      </Box>
       <Container>
-        <CustomSection>
-          <Typography variant="h4" component="h1">
-            Kuba Adamczyk
-          </Typography>
-        </CustomSection>
         <CustomSection>
           <Paper>
             <Typography variant="h4" component="h2">
@@ -96,7 +124,10 @@ export default function App() {
             <Typography variant="h5" component="h3">
               Pomodoro
             </Typography>
-            <Typography component="p">Timer pomodoro z listą zadań.</Typography>
+            <Typography component="p">
+              Timer pomodoro z edytowalną listą zadań. Działa również w
+              nieaktywnej karcie przeglądarki.
+            </Typography>
             <Button
               variant="outlined"
               href="https://pomodoro-ecru-one.vercel.app/"
@@ -147,6 +178,73 @@ export default function App() {
             >
               Sprawdź
             </Button>
+          </Paper>
+        </CustomSection>
+        <CustomSection className="skills">
+          <Paper align="center">
+            <Typography align="left" variant="h4" component="h2">
+              Umiejętności
+            </Typography>
+            <Chip label="Java Script" variant="outlined" />
+            <Chip label="jQuery" variant="outlined" />
+            <Chip label="Css" variant="outlined" />
+            <Chip label="Lass" variant="outlined" />
+            <Chip label="Scss" variant="outlined" />
+            <Chip label="Html 5" variant="outlined" />
+            <Chip label="Canvas" variant="outlined" />
+            <Chip label="Material Ui" variant="outlined" />
+            <Chip label="Bootstrap" variant="outlined" />
+            <Chip label="Git" variant="outlined" />
+            <Chip label="Git Lab" variant="outlined" />
+            <Chip label="Mercurial" variant="outlined" />
+            <Chip label="Scrum" variant="outlined" />
+            <Chip label="podstawy React JS" variant="outlined" />
+            <Chip label="podstawy GraphQL" variant="outlined" />
+          </Paper>
+        </CustomSection>
+        <CustomSection className="skills">
+          <Paper>
+            <Typography variant="h4" component="h2">
+              Kursy
+            </Typography>
+
+            <Typography variant="h5" component="h3">
+              Kurs Reacta
+            </Typography>
+            <Typography variant="h6" component="p">
+              Creative Mind - Michał Taszycki
+            </Typography>
+            <Typography component="p">
+              Kompleksowy kurs fundamentów React Js w formie online, ze
+              wsparciem wykładowcy - obecnie jestem w trakcie przerabiania
+              kursu. Adres:{" "}
+              <Link href="https://kursreacta.pl/">kursreacta.pl</Link>.
+            </Typography>
+            <Divider />
+
+            <Typography variant="h5" component="h3">
+              GraphQL Mastery - Szybki Start
+            </Typography>
+            <Typography variant="h6" component="p">
+              Creative Mind - Michał Taszycki
+            </Typography>
+            <Typography component="p">
+              Krótki kurs podstaw GraphQL i przykładowa implementacja z
+              wykorzystaniem React Js i Apollo Client - online z wsparciem
+              wykładowcy.
+            </Typography>
+            <Divider />
+
+            <Typography variant="h5" component="h3">
+              Programista PHP
+            </Typography>
+            <Typography variant="h6" component="p">
+              #!/ALX
+            </Typography>
+            <Typography component="p">
+              Kompleksowy kurs frontendowy zawierający podstawy Java Script,
+              Css, PHP i SQL. Stacjonarny intensywny, dwu tygodniowy.
+            </Typography>
           </Paper>
         </CustomSection>
         <CustomSection>
