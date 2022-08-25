@@ -101,8 +101,54 @@ export default function App() {
                 również jednym z supervisorów w procesie code reviw w dziale IT
                 WEB Oponeo.PL.
               </Typography>
-              <Button variant="outlined" href="https://www.centrumrowerowe.pl/">
-                CentrumRowerowe.pl
+
+              <Typography component="p">
+                Poniżej umieściłem kilka przykładowych projektów - w których
+                wykonałem całą pracę frontendową.
+              </Typography>
+
+              <Divider />
+
+              <Typography variant="h5" component="h3">
+                Dadelo.pl
+              </Typography>
+              <Typography component="p">
+                Strona one-page spółki akcyjnej Dadelo.
+              </Typography>
+              <Button variant="outlined" href="https://www.dadelo.pl/">
+                Sprawdź
+              </Button>
+
+              <Divider />
+
+              <Typography variant="h5" component="h3">
+                Trasy rowerowe
+              </Typography>
+              <Typography component="p">
+                Sekcja z trasami rowerowymi w sklepie CentrumRowerowe.pl. Opisy
+                poszczególnych tras są tworzone w oddzielnym edytorze (froala)
+                przez dział contentu.
+              </Typography>
+              <Button
+                variant="outlined"
+                href="https://www.centrumrowerowe.pl/trasy-rowerowe/"
+              >
+                Sprawdź
+              </Button>
+
+              <Divider />
+
+              <Typography variant="h5" component="h3">
+                Rowery Orbea
+              </Typography>
+              <Typography component="p">
+                Landing page marki Orbea w sklepie CentrumRowerowe.pl.
+              </Typography>
+              <Button
+                variant="outlined"
+                href="https://www.centrumrowerowe.pl/.orbea/"
+              >
+                Sprawdź
               </Button>
             </Box>
           </Paper>
@@ -188,7 +234,7 @@ export default function App() {
             <Chip label="Java Script" variant="outlined" />
             <Chip label="jQuery" variant="outlined" />
             <Chip label="Css" variant="outlined" />
-            <Chip label="Lass" variant="outlined" />
+            <Chip label="Less" variant="outlined" />
             <Chip label="Scss" variant="outlined" />
             <Chip label="Html 5" variant="outlined" />
             <Chip label="Canvas" variant="outlined" />
