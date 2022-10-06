@@ -18,6 +18,7 @@ import {
 } from "@mui/material";
 import { Phone, Mail, LinkedIn } from "@mui/icons-material";
 import { styled } from "@mui/material/styles";
+import React from "react";
 
 const CustomSection = styled(Box)`
   &:first-of-type {
@@ -103,9 +104,20 @@ export default function App() {
               </Typography>
 
               <Typography component="p">
-                Poniżej umieściłem kilka przykładowych projektów - w których
-                wykonałem całą pracę frontendową.
+                Poniżej umieściłem kilka przykładowych realizacji - w których wykonałem całą lub większość prac frontendowych. 
               </Typography>
+
+              <Divider />
+
+              <Typography variant="h5" component="h3">
+                Porównywarka oświetlenia
+              </Typography>
+              <Typography component="p">
+                Interaktywne narzędzie do porównywania lampek na podstawie realnych, nocnych zdjęć. Zawiera również wykres spadku mocy pod wpływem upływu czasu. 
+              </Typography>
+              <Button variant="outlined" href="https://www.centrumrowerowe.pl/porownywarka-oswietlenia/">
+                Sprawdź
+              </Button>
 
               <Divider />
 
