@@ -101,24 +101,26 @@ export default function App() {
         <CssBaseline />
         <Box sx={{ flexGrow: 1 }}>
           <AppBar position="fixed">
-            <Toolbar>
-            <IconButton
-              size="large"
-              edge="start"                             
-              sx={{ mr: 2, color: "#ffffff" }}
-              onClick={menuTrigger} 
-            >
-              <Menu />
-            </IconButton>
-              <Typography
-                align="center"
-                variant="h5"
-                component="div"
-                sx={{ flexGrow: 1 }}
+            <Container>
+              <Toolbar>
+              <IconButton
+                size="large"
+                edge="start"                             
+                sx={{ mr: 2, color: "#ffffff" }}
+                onClick={menuTrigger} 
               >
-                Kuba Adamczyk
-              </Typography>
-            </Toolbar>
+                <Menu />
+              </IconButton>
+                <Typography
+                  align="center"
+                  variant="h5"
+                  component="div"
+                  sx={{ flexGrow: 1 }}
+                >
+                  Kuba Adamczyk
+                </Typography>
+              </Toolbar>
+            </Container>
           </AppBar>
         </Box>
         <Drawer         
@@ -262,7 +264,7 @@ export default function App() {
                 drobne aplikacje.
               </Typography>
 
-              <Divider />
+              <Divider />          
 
               <Typography variant="h5" component="h3">
                 Pomodoro
@@ -281,6 +283,19 @@ export default function App() {
               <Divider />
 
               <Typography variant="h5" component="h3">
+                Fiszki - nauka słówek
+              </Typography>
+              <Typography component="p">
+                Aplikacja, do nauki słówek w języku angielskim. 
+                Obecnie właśnie tą aplikację rozwijam. Już teraz można dodawać słówka i powtarzać je w typowy dla fiszek sposób.
+              </Typography>
+              <Button variant="outlined" href="https://fiszki-miszki.vercel.app/">
+                Sprawdź
+              </Button>              
+
+              <Divider />
+
+              <Typography variant="h5" component="h3">
                 Dojazdy PKP
               </Typography>
               <Typography component="p">
@@ -289,38 +304,7 @@ export default function App() {
               <Button variant="outlined" href="https://trains.vercel.app/">
                 Sprawdź
               </Button>
-
-              <Divider />
-
-              <Typography variant="h5" component="h3">
-                Losowy cytat
-              </Typography>
-              <Typography component="p">
-                Reactowa apka pobiera losowy cytat z serwera GraphQl przy pomocy
-                Apollo Client.
-              </Typography>
-              <Button
-                variant="outlined"
-                href="https://inspirational-quotes-theta.vercel.app/"
-              >
-                Sprawdź
-              </Button>
-
-              <Divider />
-
-              <Typography variant="h5" component="h3">
-                Music Player
-              </Typography>
-              <Typography component="p">
-                Prosty audio player, pobierający utwory muzyczne z zewnętrznego
-                api.
-              </Typography>
-              <Button
-                variant="outlined"
-                href="https://music-player-nine-self.vercel.app/"
-              >
-                Sprawdź
-              </Button>
+         
             </Paper>
           </CustomSection>
           <CustomSection className="skills">
@@ -352,13 +336,26 @@ export default function App() {
               </Typography>
 
               <Typography variant="h5" component="h3">
+                Audytowanie stron internetowych zgodnie ze standardem WCAG 2.1
+              </Typography>
+              <Typography variant="h6" component="p">
+                Widzialni.eu 
+              </Typography>
+              <Typography component="p">
+                Kurs audytowania i korekty stron pod kontem dostępności
+                dla osób z różnymi niepełnosprawnościami,
+                zgodnie ze standardem WCAG 2.1. Trzy dni wykładów online.
+              </Typography>
+              <Divider />
+
+              <Typography variant="h5" component="h3">
                 Kurs Reacta
               </Typography>
               <Typography variant="h6" component="p">
                 Creative Mind - Michał Taszycki
               </Typography>
               <Typography component="p">
-                Kompleksowy kurs fundamentów React Js w formie online, ze
+                Kurs fundamentów React Js w formie online, ze
                 wsparciem wykładowcy - obecnie jestem w trakcie przerabiania
                 kursu. Adres:{" "}
                 <Link href="https://kursreacta.pl/">kursreacta.pl</Link>.
@@ -373,8 +370,7 @@ export default function App() {
               </Typography>
               <Typography component="p">
                 Krótki kurs podstaw GraphQL i przykładowa implementacja z
-                wykorzystaniem React Js i Apollo Client - online z wsparciem
-                wykładowcy.
+                wykorzystaniem React Js i Apollo Client - online.
               </Typography>
               <Divider />
 
