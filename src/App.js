@@ -266,44 +266,58 @@ export default function App() {
 
               <Divider />          
 
+       
               <Typography variant="h5" component="h3">
-                Pomodoro
-              </Typography>
-              <Typography component="p">
-                Timer pomodoro z edytowalną listą zadań. Działa również w
-                nieaktywnej karcie przeglądarki.
-              </Typography>
-              <Button
-                variant="outlined"
-                href="https://pomodoro-ecru-one.vercel.app/"
-              >
-                Sprawdź
-              </Button>
-
-              <Divider />
-
-              <Typography variant="h5" component="h3">
-                Fiszki - nauka słówek
-              </Typography>
-              <Typography component="p">
-                Aplikacja, do nauki słówek w języku angielskim. 
-                Obecnie właśnie tą aplikację rozwijam. Już teraz można dodawać słówka i powtarzać je w typowy dla fiszek sposób.
-              </Typography>
-              <Button variant="outlined" href="https://fiszki-miszki.vercel.app/">
-                Sprawdź
-              </Button>              
-
-              <Divider />
-
-              <Typography variant="h5" component="h3">
-                Dojazdy PKP
-              </Typography>
-              <Typography component="p">
-                Aplikacja na telefon ułatwiająca moje dojazdy pociągiem do pracy.
-              </Typography>
-              <Button variant="outlined" href="https://trains.vercel.app/">
-                Sprawdź
-              </Button>
+              Pomodoro
+            </Typography>
+            <Typography component="p">
+              Timer pomodoro z edytowalną listą zadań. Działa również w
+              nieaktywnej karcie przeglądarki.
+            </Typography>
+            <Button
+              variant="outlined"
+              href="https://pomodoro-ecru-one.vercel.app/"
+            >
+              Sprawdź
+            </Button>
+            <Divider />
+            <Typography variant="h5" component="h3">
+              Dojazdy PKP
+            </Typography>
+            <Typography component="p">
+              Aplikacja na telefon ułatwiająca moje dojazdy pociągiem do pracy.
+            </Typography>
+            <Button variant="outlined" href="https://trains.vercel.app/">
+              Sprawdź
+            </Button>
+            <Divider />
+            <Typography variant="h5" component="h3">
+              Losowy cytat
+            </Typography>
+            <Typography component="p">
+              Reactowa apka pobiera losowy cytat z serwera GraphQl przy pomocy
+              Apollo Client.
+            </Typography>
+            <Button
+              variant="outlined"
+              href="https://inspirational-quotes-theta.vercel.app/"
+            >
+              Sprawdź
+            </Button>
+            <Divider />
+            <Typography variant="h5" component="h3">
+              Music Player
+            </Typography>
+            <Typography component="p">
+              Prosty audio player, pobierający utwory muzyczne z zewnętrznego
+              api.
+            </Typography>
+            <Button
+              variant="outlined"
+              href="https://music-player-nine-self.vercel.app/"
+            >
+              Sprawdź
+            </Button>
          
             </Paper>
           </CustomSection>
