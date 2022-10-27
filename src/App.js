@@ -178,7 +178,7 @@ export default function App() {
                   CentrumRowerowe.pl
                 </Typography>
                 <Typography component="p">
-                  Przykładowe projekty które wykonałem w obecnej pracy - w firmie Oponeo.PL S.A. w teamie CentrumRowerowe.pl
+                  Przykładowe projekty które wykonałem w obecnej pracy - w firmie Oponeo.PL S.A. w teamie CentrumRowerowe.pl:
                 </Typography>
                 <Divider />
  
@@ -247,7 +247,7 @@ export default function App() {
                 </Typography>
 
                 <Typography component="p">
-                  Kiloka przykładowych mini aplikacji które zrobiłem w ramach treningu React.js.<br/>
+                  Kilka przykładowych mini aplikacji które zrobiłem w ramach treningu React.js.<br/>
                   W tym temacie jestem nadal Juniorem, ale uczę się wytrwale.<br/>                                  
                 </Typography>  
 
