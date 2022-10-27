@@ -132,16 +132,16 @@ export default function App() {
               <List>
                 <ListItem disablePadding sx={{padding: "50px 20px 0"}}>
                   <ListItemButton onClick={()=>{
-                    menuButtonScroll('job')
+                    menuButtonScroll('projects')
                   }}>                    
-                    <ListItemText primary="Praca" primaryTypographyProps={{fontSize: 20}} />
+                    <ListItemText primary="Projekty" primaryTypographyProps={{fontSize: 20}} />
                   </ListItemButton>
                 </ListItem>
                 <ListItem disablePadding sx={{padding: "0 20px"}}>
                   <ListItemButton onClick={()=>{
-                    menuButtonScroll('react')
+                    menuButtonScroll('about')
                   }}>                    
-                    <ListItemText primary="ReactJS" primaryTypographyProps={{fontSize: 20}}/>
+                    <ListItemText primary="O mnie" primaryTypographyProps={{fontSize: 20}}/>
                   </ListItemButton>
                 </ListItem>
                 <ListItem disablePadding sx={{padding: "0 20px"}}>
@@ -170,33 +170,20 @@ export default function App() {
           </Box>
         </Drawer>
         <Container>
+          
           <CustomSection>
-            <Paper id='job'>
+            <Paper id='projects'>        
+
               <Typography variant="h4" component="h2">
-                Praca
-              </Typography>
-              <Box>
-                <Typography component="p">
-                  Obecnie pracuje w spółce Oponeo.PL S.A. Zajmuje się pracami
-                  frontendowymi w zespole rozwijającym internetowy sklep
-                  CentrumRowerowe.pl. Aplikacja zbudowana jest na klasycznym
-                  wzorcu MVC, frontend oparty o jQuery i Less.
+                  CentrumRowerowe.pl
                 </Typography>
                 <Typography component="p">
-                  Czasem biorę udział w powiązanych projektach np:{" "}
-                  <Link href="https://www.edrabiny.pl/">eDrabiny.pl</Link> czy{" "}
-                  <Link href="https://www.dadelo.pl/">Dadelo.pl</Link>. Jestem
-                  również jednym z supervisorów w procesie code reviw w dziale IT
-                  WEB Oponeo.PL.
+                  Przykładowe projekty które wykonałem w obecnej pracy - w firmie Oponeo.PL S.A. w teamie CentrumRowerowe.pl
                 </Typography>
-
-                <Typography component="p">
-                  Poniżej umieściłem kilka przykładowych realizacji - w których wykonałem całą lub większość prac frontendowych. 
-                </Typography>
-
                 <Divider />
+ 
 
-                <Typography variant="h5" component="h3">
+            <Typography variant="h5" component="h3">
                   Porównywarka oświetlenia
                 </Typography>
                 <Typography component="p">
@@ -249,76 +236,97 @@ export default function App() {
                 >
                   Sprawdź
                 </Button>
-              </Box>
-            </Paper>
+
+                </Paper>
           </CustomSection>
           <CustomSection>
-            <Paper id='react'>
-              <Typography variant="h4" component="h2">
-                React JS
+            <Paper >
+
+                <Typography variant="h4" component="h2">
+                  Nauka React JS
+                </Typography>
+
+                <Typography component="p">
+                  Kiloka przykładowych mini aplikacji które zrobiłem w ramach treningu React.js.<br/>
+                  W tym temacie jestem nadal Juniorem, ale uczę się wytrwale.<br/>                                  
+                </Typography>  
+
+                <Divider />
+
+              <Typography variant="h5" component="h3">
+                Fiszki
               </Typography>
               <Typography component="p">
-                W wolnym czasie uczę się React JS, by porobić coś ciekawszego i
-                bardziej nowoczesnego niż w pracy :). Powolutku przerabiam kurs{" "}
-                <Link href="https://kursreacta.pl/">kursreacta.pl</Link> i piszę
-                drobne aplikacje.
+                Aplikacja, do nauki słówek w języku angielskim. 
+                Obecnie właśnie tą aplikację rozwijam. Już teraz można dodawać słówka i powtarzać je w typowy dla fiszek sposób.<br/>
+                Do przechowywania danych użyłem bazy NoSQL od Google - Firebase.
               </Typography>
 
-              <Divider />          
+              <Button variant="outlined" href="https://fiszki-miszki.vercel.app/">
+                Sprawdź
+              </Button>     
 
+                <Divider />
        
               <Typography variant="h5" component="h3">
               Pomodoro
-            </Typography>
-            <Typography component="p">
-              Timer pomodoro z edytowalną listą zadań. Działa również w
-              nieaktywnej karcie przeglądarki.
-            </Typography>
-            <Button
-              variant="outlined"
-              href="https://pomodoro-ecru-one.vercel.app/"
-            >
-              Sprawdź
-            </Button>
-            <Divider />
-            <Typography variant="h5" component="h3">
-              Dojazdy PKP
-            </Typography>
-            <Typography component="p">
-              Aplikacja na telefon ułatwiająca moje dojazdy pociągiem do pracy.
-            </Typography>
-            <Button variant="outlined" href="https://trains.vercel.app/">
-              Sprawdź
-            </Button>
-            <Divider />
-            <Typography variant="h5" component="h3">
-              Losowy cytat
-            </Typography>
-            <Typography component="p">
-              Reactowa apka pobiera losowy cytat z serwera GraphQl przy pomocy
-              Apollo Client.
-            </Typography>
-            <Button
-              variant="outlined"
-              href="https://inspirational-quotes-theta.vercel.app/"
-            >
-              Sprawdź
-            </Button>
-            <Divider />
-            <Typography variant="h5" component="h3">
-              Music Player
-            </Typography>
-            <Typography component="p">
-              Prosty audio player, pobierający utwory muzyczne z zewnętrznego
-              api.
-            </Typography>
-            <Button
-              variant="outlined"
-              href="https://music-player-nine-self.vercel.app/"
-            >
-              Sprawdź
-            </Button>
+              </Typography>
+              <Typography component="p">
+                Timer pomodoro z edytowalną listą zadań. Działa również w
+                nieaktywnej karcie przeglądarki. Material UI.
+              </Typography>
+              <Button
+                variant="outlined"
+                href="https://pomodoro-ecru-one.vercel.app/"
+              >
+                Sprawdź
+              </Button>                       
+
+              <Divider />
+
+              <Typography variant="h5" component="h3">
+                Dojazdy PKP
+              </Typography>
+              <Typography component="p">
+                Mój pierwszy mini projekt w reakcie. Aplikacja na telefon ułatwiająca moje dojazdy pociągiem do pracy.<br/>
+                Dane przechowywane na najprostrzym - ale własnym serwerze GraphQl.
+              </Typography>
+              <Button variant="outlined" href="https://trains.vercel.app/">
+                Sprawdź
+              </Button>
          
+            </Paper>
+          </CustomSection>
+          <CustomSection>
+            <Paper id='about'>
+              <Typography variant="h4" component="h2">
+                O mnie
+              </Typography>
+              
+              <Typography component="p">
+                  Obecnie pracuje w spółce Oponeo.PL S.A. Zajmuje się pracami
+                  frontendowymi w zespole rozwijającym internetowy sklep
+                  CentrumRowerowe.pl. Aplikacja zbudowana jest na klasycznym
+                  wzorcu MVC, frontend oparty o jQuery i Less.
+                </Typography>
+                
+                <Typography component="p">
+                  Czasem biorę udział w powiązanych projektach np:{" "}
+                  <Link href="https://www.edrabiny.pl/">eDrabiny.pl</Link> czy{" "}
+                  <Link href="https://www.dadelo.pl/">Dadelo.pl</Link>. Jestem
+                  również jednym z supervisorów w procesie code reviw w dziale IT
+                  WEB Oponeo.PL.
+                </Typography>
+
+                <Divider />
+
+                <Typography component="p">
+                  W wolnym czasie uczę się React JS, by porobić coś ciekawszego i
+                  bardziej nowoczesnego niż w pracy :). Powolutku przerabiam kurs{" "}
+                  <Link href="https://kursreacta.pl/">kursreacta.pl</Link> i piszę
+                  drobne aplikacje. Chętnie zaczął bym pracę związaną z React-em.
+                </Typography>   
+             
             </Paper>
           </CustomSection>
           <CustomSection className="skills">
@@ -326,21 +334,26 @@ export default function App() {
               <Typography align="left" variant="h4" component="h2">
                 Umiejętności
               </Typography>
-              <Chip label="Java Script" variant="outlined" />
+              <Chip label="ES5 / ES6" variant="outlined" />
               <Chip label="jQuery" variant="outlined" />
-              <Chip label="Css" variant="outlined" />
               <Chip label="Less" variant="outlined" />
-              <Chip label="Scss" variant="outlined" />
-              <Chip label="Html 5" variant="outlined" />
-              <Chip label="Canvas" variant="outlined" />
-              <Chip label="Material Ui" variant="outlined" />
-              <Chip label="Bootstrap" variant="outlined" />
+              <Chip label="Css" variant="outlined" />
+              <Chip label="FlexBox" variant="outlined" />
+              <Chip label="Html 5" variant="outlined" /> 
               <Chip label="Git" variant="outlined" />
               <Chip label="Git Lab" variant="outlined" />
-              <Chip label="Mercurial" variant="outlined" />
-              <Chip label="Scrum" variant="outlined" />
-              <Chip label="podstawy React JS" variant="outlined" />
-              <Chip label="podstawy GraphQL" variant="outlined" />
+              <Chip label="Scrum" variant="outlined" />    
+              <Chip label="Rest Api" variant="outlined" />         
+              <Typography align="left" variant="p" component="h3">
+                Podstawy / uczę się :
+              </Typography>   
+              <Chip label="React JS" variant="outlined" /> 
+              <Chip label="Webpack" variant="outlined" />  
+              <Chip label="Firebase" variant="outlined" />   
+              <Chip label="Material Ui" variant="outlined" />      
+              <Chip label="Scss / Sass" variant="outlined" />
+              <Chip label="Canvas" variant="outlined" /> 
+              <Chip label="GraphQL" variant="outlined" />                            
             </Paper>
           </CustomSection>
           <CustomSection>
@@ -350,7 +363,7 @@ export default function App() {
               </Typography>
 
               <Typography variant="h5" component="h3">
-                Audytowanie stron internetowych zgodnie ze standardem WCAG 2.1
+              WCAG 2.1 - Audytowanie stron internetowych
               </Typography>
               <Typography variant="h6" component="p">
                 Widzialni.eu 
