@@ -16,9 +16,10 @@ import {
   Toolbar,
   IconButton,
   Drawer,
-  Chip
+  Chip, 
+  Stack
 } from "@mui/material";
-import { Phone, Mail, LinkedIn , Menu, ConstructionOutlined} from "@mui/icons-material";
+import { Phone, Mail, LinkedIn , Menu, GitHub} from "@mui/icons-material";
 import { styled, createTheme, ThemeProvider } from "@mui/material/styles";
 import React, {useState} from "react";
 
@@ -175,10 +176,10 @@ export default function App() {
             <Paper id='projects'>        
 
               <Typography variant="h4" component="h2">
-                  CentrumRowerowe.pl
+                  Centrum<wbr/>Rowerowe.pl
                 </Typography>
                 <Typography component="p">
-                  Przykładowe projekty które wykonałem w obecnej pracy - w firmie Oponeo.PL S.A. w teamie CentrumRowerowe.pl:
+                  Przykładowe projekty które wykonałem w obecnej pracy - Oponeo.PL S.A. w teamie CentrumRowerowe.pl:
                 </Typography>
                 <Divider />
  
@@ -247,11 +248,28 @@ export default function App() {
                 </Typography>
 
                 <Typography component="p">
-                  Kilka przykładowych mini aplikacji które zrobiłem w ramach treningu React.js.<br/>
-                  W tym temacie jestem nadal Juniorem, ale uczę się wytrwale.<br/>                                  
+                  Przykładowe mini aplikacje które zrobiłem w ramach treningu React.js.<br/>                                                  
                 </Typography>  
 
                 <Divider />
+
+                <Typography variant="h5" component="h3">
+                Bankomat
+              </Typography>
+              <Typography component="p">
+                Symulacja bankomatu. React.js + Scss. W pliku konfiguracyjnym można zmienić walutę, limity i obsługiwane nominały.
+              </Typography>
+
+              <Stack spacing={2} direction="row">
+                <Button variant="outlined" href="https://fiszki-miszki.vercel.app/">
+                  Sprawdź
+                </Button>
+                <Button variant="outlined" href="https://fiszki-miszki.vercel.app/" startIcon={<GitHub />}>
+                  Git Hub
+                </Button>
+              </Stack>             
+
+                <Divider />  
 
               <Typography variant="h5" component="h3">
                 Fiszki
@@ -264,7 +282,7 @@ export default function App() {
 
               <Button variant="outlined" href="https://fiszki-miszki.vercel.app/">
                 Sprawdź
-              </Button>     
+              </Button>   
 
                 <Divider />
        
@@ -280,21 +298,8 @@ export default function App() {
                 href="https://pomodoro-ecru-one.vercel.app/"
               >
                 Sprawdź
-              </Button>                       
-
-              <Divider />
-
-              <Typography variant="h5" component="h3">
-                Dojazdy PKP
-              </Typography>
-              <Typography component="p">
-                Mój pierwszy mini projekt w reakcie. Aplikacja na telefon ułatwiająca moje dojazdy pociągiem do pracy.<br/>
-                Dane przechowywane na najprostrzym - ale własnym serwerze GraphQl.
-              </Typography>
-              <Button variant="outlined" href="https://trains.vercel.app/">
-                Sprawdź
               </Button>
-         
+              
             </Paper>
           </CustomSection>
           <CustomSection>
@@ -322,9 +327,7 @@ export default function App() {
 
                 <Typography component="p">
                   W wolnym czasie uczę się React JS, by porobić coś ciekawszego i
-                  bardziej nowoczesnego niż w pracy :). Powolutku przerabiam kurs{" "}
-                  <Link href="https://kursreacta.pl/">kursreacta.pl</Link> i piszę
-                  drobne aplikacje. Chętnie zaczął bym pracę związaną z React-em.
+                  bardziej nowoczesnego niż w pracy :). Chętnie zaczął bym pracę związaną z React-em.
                 </Typography>   
              
             </Paper>
@@ -382,9 +385,8 @@ export default function App() {
                 Creative Mind - Michał Taszycki
               </Typography>
               <Typography component="p">
-                Kurs fundamentów React Js w formie online, ze
-                wsparciem wykładowcy - obecnie jestem w trakcie przerabiania
-                kursu. Adres:{" "}
+                Kompleksowy kurs fundamentów React Js w formie online, ze
+                wsparciem wykładowcy Adres:{" "}
                 <Link href="https://kursreacta.pl/">kursreacta.pl</Link>.
               </Typography>
               <Divider />
