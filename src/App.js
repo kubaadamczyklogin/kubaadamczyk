@@ -176,14 +176,24 @@ export default function App() {
             <Paper id='projects'>        
 
               <Typography variant="h4" component="h2">
-                  Centrum<wbr/>Rowerowe.pl
+                  Oponeo.pl
                 </Typography>
                 <Typography component="p">
-                  Przykładowe projekty które wykonałem w obecnej pracy - Oponeo.PL S.A. w teamie CentrumRowerowe.pl:
+                  Przykładowe projekty które wykonałem w obecnej pracy - Oponeo.PL S.A.:
                 </Typography>
                 <Divider />
  
+             <Typography variant="h5" component="h3">
+                  Hawk
+                </Typography>
+                <Typography component="p">
+                  System Erp firmy Oponeo. Z przyczyn oczywistych niestety nie mogę go podlinkować.
+                  Budujemy go w małym zespole, wykorzystujac najnowsze dobrodziejstwa Angulara. By zachować łatwość rozwijania łączymy Atomic Design i konwencje BEM.
+                  Najnowszą wersję którą właśnie tworzymy postawiliśmy jako monorepo NX.
+                </Typography>               
 
+                <Divider />
+            
             <Typography variant="h5" component="h3">
                   Porównywarka oświetlenia
                 </Typography>
@@ -261,30 +271,15 @@ export default function App() {
               </Typography>
 
               <Stack spacing={2} direction="row">
-                <Button variant="outlined" href="https://fiszki-miszki.vercel.app/">
+                <Button variant="outlined" href="https://atm-kubaadamczykweb.vercel.app/">
                   Sprawdź
                 </Button>
-                <Button variant="outlined" href="https://fiszki-miszki.vercel.app/" startIcon={<GitHub />}>
+                <Button variant="outlined" href="https://github.com/KubaAdamczykWeb/Atm" startIcon={<GitHub />}>
                   Git Hub
                 </Button>
               </Stack>             
 
-                <Divider />  
-
-              <Typography variant="h5" component="h3">
-                Fiszki
-              </Typography>
-              <Typography component="p">
-                Aplikacja, do nauki słówek w języku angielskim. 
-                Obecnie właśnie tą aplikację rozwijam. Już teraz można dodawać słówka i powtarzać je w typowy dla fiszek sposób.<br/>
-                Do przechowywania danych użyłem bazy NoSQL od Google - Firebase.
-              </Typography>
-
-              <Button variant="outlined" href="https://fiszki-miszki.vercel.app/">
-                Sprawdź
-              </Button>   
-
-                <Divider />
+                <Divider />              
        
               <Typography variant="h5" component="h3">
               Pomodoro
@@ -307,27 +302,21 @@ export default function App() {
               <Typography variant="h4" component="h2">
                 O mnie
               </Typography>
-              
-              <Typography component="p">
-                  Obecnie pracuje w spółce Oponeo.PL S.A. Zajmuje się pracami
-                  frontendowymi w zespole rozwijającym internetowy sklep
-                  CentrumRowerowe.pl. Aplikacja zbudowana jest na klasycznym
-                  wzorcu MVC, frontend oparty o jQuery i Less.
-                </Typography>
-                
-                <Typography component="p">
-                  Czasem biorę udział w powiązanych projektach np:{" "}
-                  <Link href="https://www.edrabiny.pl/">eDrabiny.pl</Link> czy{" "}
-                  <Link href="https://www.dadelo.pl/">Dadelo.pl</Link>. Jestem
-                  również jednym z supervisorów w procesie code reviw w dziale IT
-                  WEB Oponeo.PL.
-                </Typography>
 
+               <Typography component="p">
+                W Oponeo przez długi czas byłem głównym frontendem sklepu CentrumRowerowe.pl.
+                Sklep napisany w staromodnym MVC na ES5 i jQuery. Ale można było potworzyć w nim ładnie stylowane strony. Ponadto najwięcej radości sprawiało mi pisanie od podstaw funkcjonalności takich jak zoom, slajdery itp.
+              </Typography>
+              <Typography component="p">    
+                Obecnie jednak mogę poszaleć w Angularze - w małym, ambitnym zespole tworzymy własny duży system Erp. Możemy używać nanowszych technologii i mamy czas poeksperymentować.
+                Jedyny poważny minus dla mnie to "ponury" wygląd: apka musi fajnie działać, ale design ma być skromny.  
+              </Typography>             
+              
                 <Divider />
 
                 <Typography component="p">
-                  W wolnym czasie uczę się React JS, by porobić coś ciekawszego i
-                  bardziej nowoczesnego niż w pracy :). Chętnie zaczął bym pracę związaną z React-em.
+                 Obecnie nie stety nie mam zasobów na własne projekty - mam 3-kę małych dzieci.
+                  Z pracy jestem zadowolony, choć czasem myślę o zmianie, szczególnie był bym zadowolony gdybym mógł robić mniejsze a bardziej zróżnicowane projekty, koniecznie w Angularze lub ReactJS.
                 </Typography>   
              
             </Paper>
@@ -337,25 +326,29 @@ export default function App() {
               <Typography align="left" variant="h4" component="h2">
                 Umiejętności
               </Typography>
+              <Chip label="Angular" variant="outlined" />   
+              <Chip label="Typescript" variant="outlined" /> 
               <Chip label="ES5 / ES6" variant="outlined" />
               <Chip label="jQuery" variant="outlined" />
               <Chip label="Less" variant="outlined" />
-              <Chip label="Css" variant="outlined" />
-              <Chip label="FlexBox" variant="outlined" />
+              <Chip label="Scss" variant="outlined" />
+              <Chip label="BEM" variant="outlined" />  
+              <Chip label="Css" variant="outlined" />              
               <Chip label="Html 5" variant="outlined" /> 
               <Chip label="Git" variant="outlined" />
               <Chip label="Git Lab" variant="outlined" />
-              <Chip label="Scrum" variant="outlined" />    
-              <Chip label="Rest Api" variant="outlined" />         
+              <Chip label="Atomic Design" variant="outlined" />
+              <Chip label="Scrum" variant="outlined" /> 
               <Typography align="left" variant="p" component="h3">
                 Podstawy / uczę się :
               </Typography>   
-              <Chip label="React JS" variant="outlined" /> 
-              <Chip label="Webpack" variant="outlined" />  
-              <Chip label="Firebase" variant="outlined" />   
-              <Chip label="Material Ui" variant="outlined" />      
-              <Chip label="Scss / Sass" variant="outlined" />
-              <Chip label="Canvas" variant="outlined" /> 
+              <Chip label="Angular NGRX" variant="outlined" />
+              <Chip label="Angular NX" variant="outlined" />
+              <Chip label="SQL" variant="outlined" />
+              <Chip label="React JS" variant="outlined" />
+              <Chip label="React JS" variant="outlined" />  
+              <Chip label="React JS" variant="outlined" />               
+              <Chip label="Material" variant="outlined" />               
               <Chip label="GraphQL" variant="outlined" />                            
             </Paper>
           </CustomSection>
@@ -364,6 +357,17 @@ export default function App() {
               <Typography variant="h4" component="h2">
                 Kursy
               </Typography>
+
+              <Typography variant="h5" component="h3">
+                Angular The Complete Guide
+              </Typography>
+              <Typography variant="h6" component="p">
+                Maximilian Shwarzmüller 
+              </Typography>
+              <Typography component="p">
+                Kompleksowy kurs Angulara na platformie Udemy
+              </Typography>
+              <Divider />
 
               <Typography variant="h5" component="h3">
               WCAG 2.1 - Audytowanie stron internetowych
