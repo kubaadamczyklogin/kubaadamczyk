@@ -195,7 +195,7 @@ export default function App() {
                 <Divider />
             
             <Typography variant="h5" component="h3">
-                  Porównywarka oświetlenia
+                  CentrumRowerowe.pl: Porównywarka oświetlenia
                 </Typography>
                 <Typography component="p">
                   Interaktywne narzędzie do porównywania lampek na podstawie realnych, nocnych zdjęć. Zawiera również wykres spadku mocy pod wpływem upływu czasu. 
@@ -219,7 +219,7 @@ export default function App() {
                 <Divider />
 
                 <Typography variant="h5" component="h3">
-                  Trasy rowerowe
+                  CentrumRowerowe.pl: Trasy rowerowe
                 </Typography>
                 <Typography component="p">
                   Sekcja z trasami rowerowymi w sklepie CentrumRowerowe.pl. Opisy
@@ -236,7 +236,7 @@ export default function App() {
                 <Divider />
 
                 <Typography variant="h5" component="h3">
-                  Rowery Orbea
+                  CentrumRowerowe.pl: Rowery Orbea
                 </Typography>
                 <Typography component="p">
                   Landing page marki Orbea w sklepie CentrumRowerowe.pl.
@@ -305,7 +305,7 @@ export default function App() {
 
                <Typography component="p">
                 W Oponeo przez długi czas byłem głównym frontendem sklepu CentrumRowerowe.pl.
-                Sklep napisany w staromodnym MVC na ES5 i jQuery. Ale można było potworzyć w nim ładnie stylowane strony. Ponadto najwięcej radości sprawiało mi pisanie od podstaw funkcjonalności takich jak zoom, slajdery itp.
+                Sklep napisany w staromodnym MVC na ES5 i jQuery.Jednak mogłem potworzyć w nim ładnie stylowane strony. Pozatym najwięcej radości sprawiało mi pisanie od podstaw funkcjonalności takich jak zoom, slajdery itp.
               </Typography>
               <Typography component="p">    
                 Obecnie jednak mogę poszaleć w Angularze - w małym, ambitnym zespole tworzymy własny duży system Erp. Możemy używać nanowszych technologii i mamy czas poeksperymentować.
@@ -315,7 +315,7 @@ export default function App() {
                 <Divider />
 
                 <Typography component="p">
-                 Obecnie nie stety nie mam zasobów na własne projekty - mam 3-kę małych dzieci.
+                 Obecnie niestety niemam zasobów na własne projekty - mam 3-kę małych dzieci.
                   Z pracy jestem zadowolony, choć czasem myślę o zmianie, szczególnie był bym zadowolony gdybym mógł robić mniejsze a bardziej zróżnicowane projekty, koniecznie w Angularze lub ReactJS.
                 </Typography>   
              
@@ -344,9 +344,7 @@ export default function App() {
               </Typography>   
               <Chip label="Angular NGRX" variant="outlined" />
               <Chip label="Angular NX" variant="outlined" />
-              <Chip label="SQL" variant="outlined" />
-              <Chip label="React JS" variant="outlined" />
-              <Chip label="React JS" variant="outlined" />  
+              <Chip label="SQL" variant="outlined" />             
               <Chip label="React JS" variant="outlined" />               
               <Chip label="Material" variant="outlined" />               
               <Chip label="GraphQL" variant="outlined" />                            
@@ -365,7 +363,7 @@ export default function App() {
                 Maximilian Shwarzmüller 
               </Typography>
               <Typography component="p">
-                Kompleksowy kurs Angulara na platformie Udemy
+                Kompleksowy kurs Angulara na platformie Udemy.
               </Typography>
               <Divider />
 
